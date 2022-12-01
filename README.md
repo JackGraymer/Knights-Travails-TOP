@@ -1,7 +1,12 @@
 # Knights Travails TOP
 
 Project for The Odin Project (TOP).<br>
-The objective is to use the algorithm knowledge from previous lessons to build a data structure and an algorithm that will find the shortest path between two nodes. <br>
+The objective is to test algorithm and data structures knowledge and use it to build a script that will find the shortest path between two nodes. <br><br>
+
+<strong>Knight Traveils</strong> is an exercise set up on a classic chess board, size of 8x8, with only our knight in it.<br> 
+The knight has a function with 2 parameters, start point and end point.
+Given these parameters, the function will determine the shortest path between them, print how many moves and which cells where used.
+#
 
 <details>
 <summary>Assignment</summary>
