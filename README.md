@@ -8,6 +8,7 @@ The knight has a function with 2 parameters, start point and end point.
 Given these parameters, the function will determine the shortest path between them, print how many moves and which cells where used. <br>
 
 <img src="./01.png" alt="Knights Travails board">
+
 #
 
 <details>
