@@ -31,21 +31,27 @@ function knightMoves(start, end, queue =[]){
     } 
     if(start[0] == end[0] && start[1] == end[1]){
         console.log('found')
-        return
+        return 
     }
     
     
-    while(start !== end){
+    if(start !== end){
         getNeighbor(start)
+        start = queue.shift()
         console.log('queue', queue)
-        return
+        console.log('start is: ',start)
+        knightMoves(start, end, queue)
     }
 
     function getNeighbor(coord){
         directions.forEach(element => {
-            queue.push([element[0] + coord[0], element[1] + coord[1]]) 
+            let temp = [element[0] + coord[0], element[1] + coord[1]]
+            if(temp[0] > 0 && temp[0] < 8 && temp[1] > 0 && temp[1] < 8){
+                queue.push(temp) 
+            }
+            
         });
         return 
     }
 }
-knightMoves([3,3],[3,4])
+knightMoves([0,0],[3,3])
